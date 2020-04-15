@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>troquel</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.row{
+		width: 100%;
+		max-width: 100%;
+		height: 300px;
+		background: rgb(9,9,121);
+		background: -moz-linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 100%);
+		background: -webkit-linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 100%);
+		background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979",endColorstr="#090979",GradientType=1);
+	}
+	.content{
+		background:#fff;
+		width: 100%;
+		max-width: 1295px;
+		max-height: 250px;
+		position: relative;
+		top: 25px;
+		left: 40px;
+	}
+	.xval{
+		display: block;
+		width: 300px;
+		float: left;
+	}
+	.yval{
+		width: 100%;
+		max-width:20%;
+		position: relative;
+		float:right;
+		display: flex;
+		top: -115px;
+	}
+	.exampleFormControlTextarea1{
+		position: relative;
+		left: -15px;
+	}
+	.fsub{
+		position: relative;
+		left: 220px;
+		top: 100px;
+	}
+	.inner{
+		width:100%;
+		max-width:80%;
+	}
+	.full{
+		padding: 20px 20px 20px;
+	}
+	.title{
+		font-weight: 600;
+	}
+	.subtitle{
+		font-weight: 400;
+		font-size: 16px;
+		position: relative;
+		float: inline-end;
+		top: 12px;
+		margin-right: 465px;
+	}
+	.form-control{
+		max-width: 200px;
+	}
+	.rwa{
+		float:left; 
+	}
+	.ewa{
+		position: relative;
+		float: left;
+		margin-left:-75px;
+	}
+</style>
+<body>
+<div class="row">
+	<div class="content">
+		<div class="full">
+		<h3 class="title">Tarjeta de peticiones <p class="subtitle">(Indica cuales son tus peticiones marcando los cuadros correspondientes)</p></h3>
+		<form class="inputs">
+			<div class="inner">
+				<div class="form-group">
+    					<label for="staticEmail" class="col-sm-2 col-form-label rwa">Nombre</label>
+    				<div class="col-sm-10">
+    			 	 <input type="text" class="form-control ewa" id="staticEmail" value="Introduce tu nombre">
+    				</div>
+  				</div><br>
+  				<div class="form-group">
+    					<label for="staticEmail" class="col-sm-2 col-form-label rwa">Celular</label>
+    				<div class="col-sm-10">
+    			 	 <input type="text" class="form-control ewa" id="staticEmail" value="Introduce tu celular">
+    				</div>
+   					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  				
+  				<div class="form-check">
+ 					 <input class="form-check-input" type="checkbox" value="" id="1">
+					  <label class="form-check-label" for="1">
+  						  Personal
+  					</label>
+				</div>
+				<div class="form-check">
+ 					 <input class="form-check-input" type="checkbox" value="" id="2">
+					  <label class="form-check-label" for="2">
+  						  Claro
+  					</label>
+				</div>
+				<div class="form-check">
+ 					 <input class="form-check-input" type="checkbox" value="" id="3">
+					  <label class="form-check-label" for="3">
+  						  Movistar
+  					</label>
+				</div>
+				<div class="form-check">
+ 					 <input class="form-check-input" type="checkbox" value="" id="4">
+					  <label class="form-check-label" for="4">
+  						  Tuenti
+  					</label>
+				</div>
+				<div class="form-check">
+ 					 <input class="form-check-input" type="checkbox" value="" id="5">
+					  <label class="form-check-label" for="5">
+  						  Otro
+  					</label>
+				</div>
+			</div>
+  				<div class="form-group">
+    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Email</label>
+   					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu email">
+   					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  				</div>
+  				<div class="form-group">
+    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Pais</label>
+   					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu pais">
+   					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  				</div>
+  				<div class="form-group">
+    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Direccion</label>
+   					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu direccion">
+   					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  				</div>
+  				<div class="form-group">
+    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Localidad</label>
+   					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu localidad">
+   					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  				</div>
+  				<div class="form-group">
+    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Provincia</label>
+   					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu provincia">
+   					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  				</div>
+  				<div class="form-group">
+    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Soy:</label>
+   					<div class="form-check">
+ 					 	<input class="form-check-input" type="checkbox" value="" id="4">
+					 	 <label class="form-check-label" for="4">
+  							  Niño
+  						</label>
+					</div>
+					<div class="form-check">
+ 					 	<input class="form-check-input" type="checkbox" value="" id="4">
+					 	 <label class="form-check-label" for="4">
+  							  Adolescente
+  						</label>
+					</div>
+					<div class="form-check">
+ 					 	<input class="form-check-input" type="checkbox" value="" id="4">
+					 	 <label class="form-check-label" for="4">
+  							  Joven
+  						</label>
+					</div>
+					<div class="form-check">
+ 					 	<input class="form-check-input" type="checkbox" value="" id="4">
+					 	 <label class="form-check-label" for="4">
+  							  Adulto
+  						</label>
+					</div>
+   					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  				</div>
+  			</div>
+  			<button type="submit" class="btn btn-outline-primary fsub">Enviar</button>
+		</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
