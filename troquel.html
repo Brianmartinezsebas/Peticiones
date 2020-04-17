@@ -45,11 +45,6 @@
 		position: relative;
 		left: -15px;
 	}
-	.fsub{
-		position: relative;
-		left: 220px;
-		top: 100px;
-	}
 	.inner{
 		width:100%;
 		max-width:80%;
@@ -73,29 +68,6 @@
 	}
 </style>
 <style type="text/css">
-	*{
-		margin: 0;
-		padding: 0;
-	}
-	.row{
-		width: 100%;
-		max-width: 1360px;
-		height: 300px;
-		background: rgb(9,9,121);
-		background: -moz-linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 100%);
-		background: -webkit-linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 100%);
-		background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979",endColorstr="#090979",GradientType=1);
-	}
-	.content{
-		background:#fff;
-		width: 100%;
-		max-width: 1295px;
-		max-height: 250px;
-		position: relative;
-		top: 25px;
-		left: 40px;
-	}
 	.xval{
 		display: block;
 		width: 300px;
@@ -137,7 +109,7 @@
 		margin-right: 465px;
 	}
 	.form-control{
-		max-width: 200px;
+		max-width: 300px;
 	}
 	.rwa{
 		float:left; 
@@ -154,7 +126,6 @@
   width: 100%;
   height: 100%;
   perspective: 500px;
-  float:left;
 }
 .flipcard.h.hover .front, .flipcard.h.flip .front{
   transform: perspective(600px) rotateY(-180deg);
@@ -183,16 +154,12 @@
   box-sizing: border-box;
   transition: all 0.5s ease-in;
   backface-visibility: hidden;
-}
-.flipcard img
-{
-  width:100%;
-  height:100%;
 }</style>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" type="text/javascript"></script>
 <body>
 	<div id="secondcard" class="flipcard h">
     <div class="front">
+
 
       <div class="row">
 	<div class="content">
@@ -296,13 +263,17 @@
    					<h5 for="exampleFormControlTextarea1" class="exampleFormControlTextarea1">Otros:</h5>
     				<textarea class="form-control" id="Others"  style="height: 100px;max-height:100px;min-height: 100px;" maxlength="500"></textarea>
   			</div>
-  			</form>
+  			<!-- </form> -->
 		</div>
 	</div>
-</div>  
+</div>
+  		
+
 
     </div>
     <div class="back">
+
+
 
     	<div class="row">
 	<div class="content">
@@ -313,105 +284,152 @@
 				<div class="form-group">
     					<label for="staticEmail" class="col-sm-2 col-form-label rwa">Nombre</label>
     				<div class="col-sm-10">
-    			 	 <input type="text" class="form-control ewa" id="staticEmail" value="Introduce tu nombre">
+    			 	 <input type="name" class="form-control ewa" id="staticEmail" name="name" placeholder="Introduce tu nombre">
     				</div>
+    				<div class="form-group">
+    					<label for="staticEmail" class="col-sm-2 col-form-label rwa">Direccion</label>
+    				<div class="col-sm-10">
+    			 	 <input type="text" class="form-control ewa" id="staticEmail" name="address" placeholder="Introduce tu Direccion">
+    				</div>
+  				</div>
   				</div><br>
   				<div class="form-group">
     					<label for="staticEmail" class="col-sm-2 col-form-label rwa">Celular</label>
     				<div class="col-sm-10">
-    			 	 <input type="text" class="form-control ewa" id="staticEmail" value="Introduce tu celular">
+    			 	 <input type="text" class="form-control ewa" id="staticEmail" name="mobile" placeholder="Introduce tu celular">
     				</div>
+    			
    					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-  				
-  				<div class="form-check">
- 					 <input class="form-check-input" type="checkbox" value="" id="1">
+   					<style type="text/css">
+   						.dist{
+   							width:50px;
+   							margin:auto;
+   						}
+   					</style>
+
+  				<div class="form-check" style="width: 500px;position: relative;display: contents;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 					 <input class="form-check-input" type="radio" name="mobile" value="personal" id="1">
 					  <label class="form-check-label" for="1">
-  						  Personal
+					  	<img class="dist" src="img/personal.png"></img>
+  						  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   					</label>
-				</div>
-				<div class="form-check">
- 					 <input class="form-check-input" type="checkbox" value="" id="2">
+
+ 					 <input class="form-check-input" type="radio" name="mobile" value="claro" id="2">
 					  <label class="form-check-label" for="2">
-  						  Claro
+					  	<img class="dist" src="img/claro.png"></img>
+  						  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   					</label>
-				</div>
-				<div class="form-check">
- 					 <input class="form-check-input" type="checkbox" value="" id="3">
+
+ 					 <input class="form-check-input" type="radio" name="mobile" value="movistar" id="3">
 					  <label class="form-check-label" for="3">
-  						  Movistar
+					  	<img class="dist" src="img/movistar.png"></img>
+  						  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   					</label>
-				</div>
-				<div class="form-check">
- 					 <input class="form-check-input" type="checkbox" value="" id="4">
-					  <label class="form-check-label" for="4">
-  						  Tuenti
-  					</label>
-				</div>
-				<div class="form-check">
- 					 <input class="form-check-input" type="checkbox" value="" id="5">
+
+
+ 					 <input class="form-check-input" type="radio" name="mobile" value="Otro" id="4">
 					  <label class="form-check-label" for="5">
   						  Otro
   					</label>
-				</div>
-			</div>
-  				<div class="form-group">
-    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Email</label>
-   					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu email">
-   					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+				</div></div>
+  					<style type="text/css">
+  						.frp{
+  							
+  						}
+  					</style>
+    				<div class="form-group">
+    					<label for="staticEmail" class="col-sm-2 col-form-label rwa">Email</label>
+    				<div class="col-sm-10">
+    			 	 <input type="email" class="form-control ewa" id="staticEmail" name="email" placeholder="Introduce tu Email">
+    				</div>
+    				<div class="form-group">
+    					<label for="staticEmail" class="col-sm-2 col-form-label rwa">Localidad</label>
+    				<div class="col-sm-10">
+    			 	 <input type="text" class="form-control ewa" id="staticEmail" name="location" placeholder="Introduce tu Localidad">
+    				</div>
   				</div>
-  				<div class="form-group">
-    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Pais</label>
-   					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu pais">
+  				</div><br>
    					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  				
+    				<div class="form-group">
+    					<label for="staticEmail" class="col-sm-2 col-form-label rwa">Pais</label>
+    				<div class="col-sm-10">
+    			 	 <input type="text" class="form-control ewa" id="staticEmail" name="country" placeholder="Introduce tu Pais">
+    				</div>
+    				<div class="form-group">
+    					<label for="staticEmail" class="col-sm-2 col-form-label rwa">Provincia</label>
+    				<div class="col-sm-10">
+    			 	 <input type="text" class="form-control ewa" id="staticEmail" name="province" placeholder="Introduce tu Provincia">
+    				</div>
   				</div>
-  				<div class="form-group">
-    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Direccion</label>
-   					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu direccion">
+  				</div><br>
    					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-  				</div>
-  				<div class="form-group">
-    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Localidad</label>
-   					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu localidad">
    					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-  				</div>
-  				<div class="form-group">
-    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Provincia</label>
-   					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu provincia">
+  				
    					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-  				</div>
-  				<div class="form-group">
-    				<label class="col-sm-2 col-form-label" for="exampleInputEmail1">Soy:</label>
+  				
+   					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+   					<style type="text/css">
+   						.everyone{
+   							float:right;
+   							display:block;
+   							position:relative;
+   							top:-170px;
+   							right: 50px;
+   						}
+   						.fsa{
+   							position: relative;
+   							display:block;
+   							right: 50px;
+   						}
+   					</style>
+  					<div class="everyone">
+    				<label class="col-sm-2 col-form-label fsa" for="exampleInputEmail1"><h5>Soy:</h5></label>
    					<div class="form-check">
- 					 	<input class="form-check-input" type="checkbox" value="" id="4">
+ 					 	<input class="form-check-input" type="radio" name="im" value="Niño" id="4">
 					 	 <label class="form-check-label" for="4">
   							  Niño
   						</label>
 					</div>
 					<div class="form-check">
- 					 	<input class="form-check-input" type="checkbox" value="" id="4">
+ 					 	<input class="form-check-input" type="radio" name="im" value="Adolescente" id="4">
 					 	 <label class="form-check-label" for="4">
   							  Adolescente
   						</label>
 					</div>
 					<div class="form-check">
- 					 	<input class="form-check-input" type="checkbox" value="" id="4">
+ 					 	<input class="form-check-input" type="radio" name="im" value="Joven" id="4">
 					 	 <label class="form-check-label" for="4">
   							  Joven
   						</label>
 					</div>
 					<div class="form-check">
- 					 	<input class="form-check-input" type="checkbox" value="" id="4">
+ 					 	<input class="form-check-input" type="radio" name="im" value="Adulto" id="4">
 					 	 <label class="form-check-label" for="4">
   							  Adulto
   						</label>
 					</div>
+					<style type="text/css">
+						.fsuba{
+							display: block;
+							position: relative;
+							top: -5px;
+							left: 340px;
+						}
+					</style>
+
+					<button type="submit" class="btn btn-outline-primary fsub fsuba">Enviar</button>
+					</div>
+					</div>
    					<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
   				</div>
   			</div>
-  			<button type="submit" class="btn btn-outline-primary fsub">Enviar</button>
+  			</div>
 		</form>
 		</div>
 	</div>
+</div>
+</div>
 </div>
 
 </div>
@@ -420,8 +438,8 @@
 		display: block;
 	}
 </style>
-        <button style="clear:both;padding:auto;margin-left: 155vh;margin-top: 19vh; display: block;" id="fnonea" class="fnonea btn btn-outline-primary fsub" onclick="flipcard();">Siguiente</button>
-		</form>
+
+		<button style="clear:both;padding:auto;margin-left: 155vh;margin-top: 19vh; display: block;position:fixed;" id="fnonea" class="fnonea btn btn-outline-primary fsub" onclick="flipcard();">Siguiente</button>
       <script type="text/javascript">
       	function flipcard(){
   document.querySelector('#secondcard').classList.toggle('flip');
